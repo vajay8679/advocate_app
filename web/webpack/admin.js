@@ -16,4 +16,5 @@ mix.webpackConfig({
 }).setPublicPath('public/admin-app');
 //console.log('mix', mix);
 mix.copyDirectory('resources/js/admin/assets', 'public/admin-app/assets');
-mix.react('resources/js/admin/index.js', 'public/admin-app/');
+// mix.react('resources/js/admin/index.js', 'public/admin-app/');
+mix.js('resources/js/admin/index.js', 'public/admin-app/').react();
